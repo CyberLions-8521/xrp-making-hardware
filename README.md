@@ -1,40 +1,15 @@
-#  xrp-intro-autonomous
-An XRP project file for use with autonomous and teleoperated modes.  Functions for interacting with the robot have already been created.
-  
-#  Drive Functions
+#  xrp-making-hardware
+An XRP project file that allows users to instatiate objects that represents each piece of hardware.
 
-Functions used to control the movement of the robot.
+The example drivebase has been removed; we will have to create our own.
 
-| Function | Parameters | Return Type | Description |
-| :--- | :--- | :--- | :--- |
-| `drive(speed, turn)` | `double speed`, `double turn` | `void` | Moves the robot using arcade drive. `speed` controls forward/backward (-1.0 to 1.0) and `turn` controls rotation (-1.0 to 1.0). |
-| `driveForward()` | *None* | `void` | Drives the robot straight forward at 75% speed. |
-| `driveReverse()` | *None* | `void` | Drives the robot straight backward at 75% speed. |
-| `stop()` | *None* | `void` | Stops all drivetrain movement immediately. |
+Sample functions for the robot behaviors have been removed.
+
+The `KeyboardController` class still exists, but it must be instantiated in order for its methods to be used.
 
 ---
 
-# Sensor & Actuator Functions
-
-Functions used to read telemetry from sensors or control actuators (servos).
-
-| Function | Parameters | Return Type | Description |
-| :--- | :--- | :--- | :--- |
-| `resetEncoders()` | *None* | `void` | Resets the wheel encoders back to zero. |
-| `getLeftDistanceInch()` | *None* | `double` | Gets total distance traveled by the left wheel in inches. |
-| `getRightDistanceInch()` | *None* | `double` | Gets total distance traveled by the right wheel in inches. |
-| `getHeading()` | *None* | `double` | Returns the current gyro heading angle in degrees. |
-| `resetGyro()` | *None* | `void` | Resets the gyro angle reading back to 0 degrees. |
-| `getServoPosition()` | *None* | `double` | Returns the current position of the connected servo. |
-| `setServoPosition(pos)` | `double pos` | `void` | Sets the servo position (`0.0` to `1.0`). |
-| `getUltrasonicInches()` | *None* | `double` | Reads the distance from the ultrasonic sensor in inches. |
-| `getUltrasonicMeters()` | *None* | `double` | Reads the distance from the ultrasonic sensor in meters. |
-| `getLeftReflectance()` | *None* | `double` | Reads the light reflectance value from the left line-following sensor. |
-| `getRightReflectance()` | *None* | `double` | Reads the light reflectance value from the right line-following sensor. |
-
----
-
-# Keyboard Controller Functions
+# KeyboardController Class
 
 Functions used to capture keypresses and joystick input from the keyboard controller.
 
@@ -42,6 +17,7 @@ Functions used to capture keypresses and joystick input from the keyboard contro
 
 | Function | Parameters | Return Type | Description |
 | :--- | :--- | :--- | :--- |
+| `KeyboardController(port)` | The port number for the controller (0 - 5) | *None* | The constructor.  Creates a WASD keyboard controller on the given port.  Only one keyboard controller can be created and used |
 | `getZButtonPressed()` | *None* | `boolean` | `true` only on the initial frame when **Z** key is pressed down. |
 | `getZButton()` | *None* | `boolean` | `true` as long as the **Z** key is held down. |
 | `getZButtonReleased()` | *None* | `boolean` | `true` only on the frame when **Z** key is released. |

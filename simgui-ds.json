@@ -1,0 +1,41 @@
+{
+  "keyboardJoysticks": [{
+    "axisConfig": [{
+      "decKey": 546,
+      "incKey": 549
+    }, {
+      "decKey": 568,
+      "incKey": 564
+    }, {
+      "decKey": 563,
+      "decayRate": 0,
+      "incKey": 550,
+      "keyRate": 0.01
+    }],
+    "axisCount": 3,
+    "buttonCount": 4,
+    "buttonKeys": [571, 569, 548, 567],
+    "povConfig": [{
+      "keyDown": 614,
+      "keyLeft": 616,
+      "keyRight": 618,
+      "keyUp": 620
+    }],
+    "povCount": 1
+  }, {
+    "axisCount": 2,
+    "buttonCount": 4,
+    "buttonKeys": [-1, -1, -1, -1],
+    "povCount": 0
+  }, {
+    "axisCount": 2,
+    "buttonCount": 6,
+    "buttonKeys": [-1, -1, -1, -1, -1, -1],
+    "povCount": 0
+  }, {
+    "axisCount": 0,
+    "buttonCount": 0,
+    "povCount": 0
+  }],
+  "robotJoysticks": [{"guid": "Keyboard0"}]
+}

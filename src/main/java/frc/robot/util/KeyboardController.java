@@ -8,12 +8,7 @@ import edu.wpi.first.wpilibj.GenericHID;
 
 /** A custom utility wrapper to handle keyboard inputs as a GenericHID for simulation. */
 public class KeyboardController extends GenericHID {
-    // NOTE: Singletons are NOT recommended; this is only done to reduce
-    // boilerplate code in Robot.java for the intro workshops 
-    private static final KeyboardController m_instance = new KeyboardController(0);
-    public static KeyboardController getInstance() { return m_instance; }
-
-    private KeyboardController(int port) {
+    public KeyboardController(int port) {
         super(port);
     }
     
@@ -25,7 +20,7 @@ public class KeyboardController extends GenericHID {
      * ZXCV - Buttons 1 through 4 (2026)
      * 
      * To make buttons correspond to a joystick, you must edit the values
-     * within simgui-ds.json. The values of each key correspond to those
+     * within simgui-ds.json. The values for 2027 of each key correspond to those
      * found at https://oprypin.github.io/crystal-imgui/ImGui/ImGuiKey.html
      */
 

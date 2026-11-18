@@ -6,7 +6,8 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 
-import frc.robot.util.KeyboardController;
+import frc.robot.util.WASDController;
+import frc.robot.util.IKUpDownController;
 
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.xrp.*;

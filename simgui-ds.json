@@ -84,14 +84,30 @@
       "povCount": 0
     },
     {
-      "axisCount": 0,
-      "buttonCount": 0,
+      "axisConfig": [
+        {
+          "decKey": 73,
+          "incKey": 75
+        },
+        {
+          "decKey": 265,
+          "incKey": 264
+        }
+      ],
+      "axisCount": 2,
+      "buttonCount": 4,
+      "buttonKeys": [
+        85,
+        79,
+        74,
+        76
+      ],
       "povCount": 0
     }
   ],
   "robotJoysticks": [
     {
-      "guid": "Keyboard0"
+      "guid": "Keyboard3"
     }
   ]
 }

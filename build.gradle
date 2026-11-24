@@ -68,3 +68,11 @@ wpi.java.configureTestTasks(test)
 tasks.withType(JavaCompile) {
     options.compilerArgs.add '-XDstringConcat=inline'
 }
+
+// To use javadoc to create an API for everything in the util directory
+tasks.withType(Javadoc).configureEach {
+    source = fileTree('src/main/java/frc/robot/util') {
+        include '**/*.java'
+    }
+    destinationDir = file('docs/javadoc')
+}

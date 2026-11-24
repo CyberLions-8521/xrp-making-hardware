@@ -74,5 +74,5 @@ tasks.withType(Javadoc).configureEach {
     source = fileTree('src/main/java/frc/robot/util') {
         include '**/*.java'
     }
-    destinationDir = file('docs/javadoc')
+    destinationDir = file('docs/')
 }

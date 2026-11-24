@@ -13,8 +13,8 @@ public class WASDController extends GenericHID {
     }
     
     /**
-     * WS - Axis 1
      * AD - Axis 0
+     * WS - Axis 1
      * ER - Axis 2
      * NUMPAD - POV[0]
      * ZXCV - Buttons 1 through 4 (2026)
@@ -24,7 +24,7 @@ public class WASDController extends GenericHID {
      * found at https://oprypin.github.io/crystal-imgui/ImGui/ImGuiKey.html
      * 
      * The values for 2026 correspond to
-     * https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+     * https://www.glfw.org/docs/3.3/group__keys.html
      */
 
     public boolean getZButtonPressed() {

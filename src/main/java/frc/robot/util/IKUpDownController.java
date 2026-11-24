@@ -22,7 +22,7 @@ public class IKUpDownController extends GenericHID {
      * found at https://oprypin.github.io/crystal-imgui/ImGui/ImGuiKey.html
      * 
      * The values for 2026 correspond to
-     * https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+     * https://www.glfw.org/docs/3.3/group__keys.html
      */
 
     public boolean getUButtonPressed() {

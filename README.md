@@ -5,7 +5,15 @@ The example drivebase has been removed; we will have to create our own.
 
 Sample functions for the robot behaviors have been removed.
 
-The `KeyboardController` class still exists, but it must be instantiated in order for its methods to be used.
+Various keyboard controller classes still exist, but they must be instantiated in order for its methods to be used.
+
+In the Sim GUI, the keyboard controllers available are
+|Class Name|Keyboard Num.|Description|
+|---|---|---|
+|`WASDController`|`Keyboard 0`|Mimics a single joystick on the left.  Has `AD`, `WS`, and `ER` as axes, and `ZXCV` as buttons.  Suggested use for arcade style driving.|
+|`IKUpDownController`|`Keyboard 1`|Mimics a left and right joystick that can only move up and down.  Has `IK` and the `Up/Down` Arrow keys as axes, and `UOJL` as buttons.  Suggested use for tank style driving.|
+|`WSLeftRightController`|`Keyboard 2`|Mimics a left and right joystick, with the left having up/down movement, and the right having left/right movement.  Has `WS` and `Left/Right` as axes, and `ZXCV` as buttons|
+|`KeyboardGamepad`|`Keyboard 4`|Mimics a full gamepad with two joysticks.  Both `WASD` and the arrow keys are used as axes, and `ZXCVQER` are used for buttons|
 
 ---
 

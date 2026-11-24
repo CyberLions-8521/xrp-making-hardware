@@ -1,11 +1,9 @@
 #  xrp-making-hardware
 An XRP project file that allows users to instatiate objects that represents each piece of hardware.
 
-The example drivebase has been removed; we will have to create our own.
-
-Sample functions for the robot behaviors have been removed.
-
-Various keyboard controller classes still exist, but they must be instantiated in order for its methods to be used.
+* The example drivebase has been removed; we will have to create our own.
+* Sample functions for the robot behaviors have been removed.
+* Various keyboard controller classes still exist, but they must be instantiated in order for its methods to be used.
 
 In the Sim GUI, the keyboard controllers available are
 |Class Name|Keyboard Num.|Description|
@@ -14,6 +12,11 @@ In the Sim GUI, the keyboard controllers available are
 |`IKUpDownController`|`Keyboard 1`|Mimics a left and right joystick that can only move up and down.  Has `IK` and the `Up/Down` Arrow keys as axes, and `UOJL` as buttons.  Suggested use for tank style driving.|
 |`WSLeftRightController`|`Keyboard 2`|Mimics a left and right joystick, with the left having up/down movement, and the right having left/right movement.  Has `WS` and `Left/Right` as axes, and `ZXCV` as buttons|
 |`KeyboardGamepad`|`Keyboard 4`|Mimics a full gamepad with two joysticks.  Both `WASD` and the arrow keys are used as axes, and `ZXCVQER` are used for buttons|
+
+## Keyboard Controllers API (2026)
+Find the API for the custom keyboard controller classes at the link below.
+
+[Keyboard Controllers API (2026)](https://cyberlions-8521.github.io/xrp-making-hardware/)
 
 ---
 
